@@ -1,3 +1,8 @@
+* {
+  padding: 0%;
+  margin: 0;
+}
+
 .left-padding {
   padding-left: 25px;
   /* 设置左边的空隙为25像素 */
@@ -8,8 +13,11 @@
   font-family: "deh";
   src: url("https://download.tooc.xlj0.com/uploads/103/deh.otf") format('opentype');
 }
+
 body {
   font-family: deh, Arial, sans-serif;
+  padding: 0;
+  margin: 0;
   /* 将自定义字体作为首选字体，如果无法加载则使用 Arial 和 sans-serif 作为备选字体 */
 }
 
@@ -18,18 +26,19 @@ body {
   margin-bottom: 0;
 }
 
+.rounded {
+  border-radius: 10px; /* 使用10px的圆角半径 */
+}
+
 .center {
-  text-align: bottom;
+  text-align: center;
 }
 
-@media (min-width: 768px) {
-  .dropdown-menu-fixed {
-    margin-left: 12px;
-  }
+.first-img {
+  width: 100%;
+  height: 50%;
+  opacity: 0.5;
+  background-color: aquamarine;
 }
 
-@media (max-width: 768px) {
-  .dropdown-menu-fixed {
-    margin-left: 24px;
-  }
-}
+
