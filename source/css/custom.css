@@ -21,6 +21,11 @@ body {
   /* 将自定义字体作为首选字体，如果无法加载则使用 Arial 和 sans-serif 作为备选字体 */
 }
 
+/* Twikoo评论适配 */
+#tcomment-father {
+  padding: 10px !important;
+}
+
 .fix-h3 {
   font-size: 19px;
   margin-bottom: 0;
