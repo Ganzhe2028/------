@@ -1,11 +1,6 @@
 * {
-  padding: 0%;
+  padding: 0;
   margin: 0;
-}
-
-.left-padding {
-  padding-left: 25px;
-  /* 设置左边的空隙为25像素 */
 }
 
 /* 字体 */
@@ -16,15 +11,22 @@
 
 body {
   font-family: deh, Arial, sans-serif;
-  padding: 0;
   margin: 0;
+  padding-top: 85px;
+  padding-bottom: 20px;
   /* 将自定义字体作为首选字体，如果无法加载则使用 Arial 和 sans-serif 作为备选字体 */
 }
 
 /* Twikoo评论适配 */
 #tcomment-father {
-  padding: 10px !important;
+  padding-left: 15px !important;
+  padding-right: 15px !important;
 }
+#twikoo {  /* woc直接css写就行，管它HTML有没有，最终有就行 */
+  padding-left: 30px;
+  padding-right: 30px;
+}
+
 
 .fix-h3 {
   font-size: 19px;

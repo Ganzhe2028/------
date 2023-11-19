@@ -1,8 +1,7 @@
-/* 实现固定顶栏 */
+/* 实现固定顶栏 + 负边距不占据页面内容 */
 .nav-immobilization {
     position: fixed;
     top: 0;
-    width: 100%;
 }
 
 
@@ -93,15 +92,20 @@
     padding-left: 2rem;
   }
   
+  /* 电脑 */
   @media (min-width: 768px) {
     .dropdown-menu-fixed {
-      margin-left: 12px;
+        margin-left: 12px;
     }
   }
   
+  /* 手机 */
   @media (max-width: 768px) {
     .dropdown-menu-fixed {
-      margin-left: 24px;
+        margin-left: 24px;
+    }
+    .nav-phone-fixed {
+        width: 3rem;
     }
   }
   
@@ -115,3 +119,7 @@
     width: 100%;
     /* 导航栏的其他样式属性 */
   }
+
+.title {
+    padding-left: 15px;
+}
