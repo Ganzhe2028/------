@@ -18,11 +18,8 @@ body {
 }
 
 /* Twikoo评论适配 */
-#tcomment-father {
-  padding-left: 15px !important;
-  padding-right: 15px !important;
-}
 #twikoo {  /* woc直接css写就行，管它HTML有没有，最终有就行 */
+  padding-top: 30px;
   padding-left: 30px;
   padding-right: 30px;
 }
