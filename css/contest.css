@@ -1,7 +1,65 @@
-p {
+/* 总样式 */
+div.contest {
     padding-left: 30px;
     padding-right: 30px;
     padding-top: 10px;
     padding-bottom: 30px;
 }
 
+/* text文字内容放大 */
+p {
+    font-size: medium;
+}
+
+/* title 样式 */
+h1 {
+    color: rgb(0, 192, 125);
+}
+
+h2 {
+    color: rgb(0, 192, 125);
+}
+
+
+/* 更多精彩 p标签 */
+#more-things {
+    text-align: center;
+}
+
+/* 更多精彩 a标签 */
+#more-a {
+    font-size: large;
+    z-index: 1;
+    text-decoration: none; 
+    color: rgb(0, 192, 125); 
+    background-color: rgba(0, 192, 125, 0.2);
+    border-radius: 15px;
+    position: relative;
+    display: inline-block;
+    transition: background-color .15s, box-shadow .15s; /* 将阴影和背景颜色的过渡时间设置为相同的值 */
+    cursor: pointer;
+    text-transform: uppercase;
+    background-color: inherit;
+}
+#more-a:hover {
+    cursor: pointer;
+    color: #3e3e3e;
+    background-color: rgb(0, 250, 162);
+    background-size: 400%;
+    box-shadow: 0 0 5px rgb(0, 250, 162);
+    z-index: 1;
+}
+#more-a::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: inherit;
+    filter: blur(0px);
+    z-index: -1;
+    opacity: 1;
+    border-radius: 15px;
+    transition: .1s; /* 将阴影的过渡时间设置为相同的值 */
+}

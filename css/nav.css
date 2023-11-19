@@ -1,7 +1,8 @@
-/* 实现固定顶栏 + 负边距不占据页面内容 */
+/* 实现固定顶栏 */
 .nav-immobilization {
     position: fixed;
     top: 0;
+    z-index: 2;
 }
 
 
