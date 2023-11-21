@@ -8,17 +8,46 @@ div.contest {
 
 /* text文字内容放大 */
 p {
-    font-size: medium;
+    padding-left: 45px;
+    padding-right: 45px;
+    font-size: 1.5vw;
+    color: #202020;
+}
+ul {
+    padding-left: 65px;
+    padding-right: 45px;
+    font-size: 1.5vw;
+    color: #202020;
+}
+ol {
+    padding-left: 65px;
+    padding-right: 45px;
+    font-size: 1.5vw;
+    color: #202020;
 }
 
 /* title 样式 */
 h1 {
+    text-align: center;
+    font-size: 8vw;
     color: rgb(0, 192, 125);
 }
 
 h2 {
+    padding-left: 20px;
+    padding-right: 45px;
+    font-size: 5.5vh;
     color: rgb(0, 192, 125);
     padding-bottom: 15px;
+}
+
+h3 {
+    padding-left: 25px;
+    padding-right: 45px;
+    font-size: 4vb;
+    color: rgb(0, 192, 125);
+    padding-bottom: 5px;
+    padding-top: 10px;
 }
 
 
@@ -29,6 +58,7 @@ h2 {
 
 /* 更多精彩 a标签 */
 #more-a {
+    color: #3e3e3e;
     font-size: large;
     z-index: 1;
     text-decoration: none; 
