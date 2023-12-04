@@ -1,150 +1,16 @@
 /* 实现固定顶栏 */
 .nav-immobilization {
-    position: fixed;
-    top: 0;
-    z-index: 2;
+  position: fixed;
+  top: 0;
+  z-index: 2;
 }
-
 
 /* 实现淡入淡出 */
 .nav-bigger {
-    color: #202020;
-    margin-left: 20px;
-    margin-right: 20px;
-    font-size: 1.1rem;
-    border-radius: 15px;
-    position: relative;
-    display: inline-block;
-    transition: background-color .2s, box-shadow .2s; /* 将阴影和背景颜色的过渡时间设置为相同的值 */
-    cursor: pointer;
-    text-transform: uppercase;
-    background-color: inherit;
-  }
-  .nav-bigger:hover {
-    color: #3e3e3e;
-    cursor: pointer;
-    background-color: rgb(0, 225, 148);
-    background-size: 400%;
-    box-shadow: 0 0 15px rgb(0, 225, 148);
-    z-index: 1;
-  }
-  .nav-bigger::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;
-    background: inherit;
-    filter: blur(0px);
-    z-index: -1;
-    opacity: 1;
-    border-radius: 15px;
-    transition: .05s; /* 将阴影的过渡时间设置为相同的值 */
-  }
-
-  /* dropdown-menu */
-  #dropdown-menu-pro {
-    background-color: #ffffff00;
-    color: #202020;
-    border-radius: 15px;
-    width: auto;
-    position: relative;
-    display: inline-block;
-    transition: background-color .1s, box-shadow .1s; /* 将阴影和背景颜色的过渡时间设置为相同的值 */
-    cursor: pointer;
-    text-transform: uppercase;
-    background-color: inherit;
-  }
-  #dropdown-menu-pro:hover {
-    cursor: pointer;
-    color: #3e3e3e;
-    background: rgb(0, 225, 148);
-    box-shadow: 0 0 8px rgb(0, 225, 148);
-  }
-
-  #dropdown-menu- {
-    border-radius: 15px;
-    text-align: center;
-    margin-left: 1.1rem;
-  }
-  .z-index-fixed:hover {
-    cursor: pointer;
-    z-index: 3;
-  }
-
-
-  /* 杂七杂八的优化 */
-  #font-color {
-    color: #000000a6;
-  }
-  
-  #dropdown-menu-li {
-    width: 75px;
-    text-align: center;
-    padding-left: 8.5px;
-  }
-  
-  
-  .nav-item {
-    padding-left: 2rem;
-  }
-  
-  /* 电脑 */
-  @media (min-width: 768px) {
-    .dropdown-menu-fixed {
-        margin-left: 12px;
-    }
-  }
-  
-  /* 手机 */
-  @media (max-width: 768px) {
-    .dropdown-menu-fixed {
-      margin-left: 24px;
-    }
-    .nav-phone-fixed {
-      width: 3rem;
-    }
-    #dropdown-menu- {
-      width: 200px;
-    }
-    h2 {
-      font-size: 2.5vh;
-    }
-    h3 {
-      font-size: 3vh;
-    }
-    p {
-      font-size: 3.5vh;
-    }
-    ol {
-      font-size: 1.5vh;
-    }
-    ul {
-      font-size: 1.5vh;
-    }
-  }
-  
-  .shadow {
-    box-shadow: 0,0, 100px,0;
-  }
-  
-  nav {
-    position: fixed;
-    top: 0;
-    width: 100%;
-    /* 导航栏的其他样式属性 */
-  }
-
-.title {
-    padding-left: 35px;
-    font-size: 30px;
-}
-
-#lishi-icon {
-  margin-right: 1.1rem;
-  font-size: 17px;
-  color: #65b732;
+  color: #202020;
+  margin-left: 20px;
+  margin-right: 20px;
+  font-size: 1.1rem;
   border-radius: 15px;
   position: relative;
   display: inline-block;
@@ -153,25 +19,228 @@
   text-transform: uppercase;
   background-color: inherit;
 }
-#lishi-icon:hover {
-  background: #65b732;
-  color: rgb(238, 238, 238);
+.nav-bigger:hover {
+  color: #3e3e3e;
   cursor: pointer;
-  background-size: 400%;    
-  box-shadow: 0 0 11.5px #65b732;
+  background-color: rgb(0, 225, 148);
+  background-size: 400%;
+  box-shadow: 0 0 15px rgb(0, 225, 148);
   z-index: 1;
 }
-#lishi-icon::before {
+.nav-bigger::before {
   content: '';
-    position: absolute;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;
-    background: inherit;
-    filter: blur(0px);
-    z-index: -1;
-    opacity: 1;
-    border-radius: 15px;
-    transition: .05s; /* 将阴影的过渡时间设置为相同的值 */
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: inherit;
+  filter: blur(0px);
+  z-index: -1;
+  opacity: 1;
+  border-radius: 15px;
+  transition: .05s; /* 将阴影的过渡时间设置为相同的值 */
+}
+
+/* dropdown-menu */
+#dropdown-menu-pro {
+  background-color: #ffffff00;
+  color: #202020;
+  border-radius: 15px;
+  width: auto;
+  position: relative;
+  display: inline-block;
+  transition: background-color .1s, box-shadow .1s; /* 将阴影和背景颜色的过渡时间设置为相同的值 */
+  cursor: pointer;
+  text-transform: uppercase;
+  background-color: inherit;
+}
+#dropdown-menu-pro:hover {
+  cursor: pointer;
+  color: #3e3e3e;
+  background: rgb(0, 225, 148);
+  box-shadow: 0 0 8px rgb(0, 225, 148);
+}
+
+#dropdown-menu- {
+  border-radius: 15px;
+  text-align: center;
+  margin-left: 1.1rem;
+}
+.z-index-fixed:hover {
+  cursor: pointer;
+  z-index: 3;
+}
+
+#nav-center {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#nbsp {
+  text-align: end;
+  width: 131px;
+}
+
+/* 杂七杂八的优化 */
+#font-color {
+  color: #000000a6;
+}
+
+#dropdown-menu-li {
+  width: 75px;
+  text-align: center;
+  padding-left: 8.5px;
+}
+
+
+.nav-item {
+  padding-left: 2rem;
+}
+
+/* 电脑 */
+@media (min-width: 451px) {
+  .dropdown-menu-fixed {
+    margin-left: 12px;
+  }
+
+  #divider {
+    margin-bottom: 100px;
+  }
+
+  .kongbai-1 {
+    height: 110px;
+  }
+  h2#f {
+    font-size: 5vw;
+    text-align: center; 
+    padding-top: 100px;
+  }
+  #nav-center {
+    margin-left: auto;
+    margin-right: auto;
+    padding-right: 131px !important;
+  }
+
+  h2 {
+    font-size: 5.5vh;
+  }
+
+  h3 {
+    font-size: 5vh;
+  }
+
+  p {
+    font-size: 1.8vw;
+  }
+
+  ul {
+    font-size: 1.8vw; 
+  }
+
+  ol {
+    font-size: 1.8vw; 
+  }
+}
+
+/* 手机 */
+@media (max-width: 450px) {
+  nav {
+    width: 100% !important;
+  }
+
+  #nav-center {
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .kongbai-1 {
+    height: 170px;
+  }
+
+  .dropdown-menu-fixed {
+    margin-left: 24px;
+  }
+  #dropdown-menu- {
+    width: 200px;
+  }
+  a#more-a {
+    font-size: 3.5vh;
+  }
+  h2#f {
+    font-size: 4.9vh;
+    text-align: center; 
+    padding-top: 100px;
+  }
+  h1 {
+    margin: auto;
+    padding: auto;
+    font-size: 70px !important;
+  }
+  h2 {
+    font-size: 3.5vh;
+  }
+  h3 {
+    font-size: 3vh;
+  }
+  p {
+    font-size: 2.5vh;
+  }
+  ol {
+    font-size: 2.5vh;
+  }
+  ul {
+    font-size: 2.5vh;
+  }
+}
+
+.shadow {
+  box-shadow: 0,0, 100px,0;
+}
+
+nav {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  /* 导航栏的其他样式属性 */
+}
+
+.title {
+  padding-left: 35px;
+  font-size: 30px;
+}
+
+#lishi-icon {
+margin-right: 1.1rem;
+font-size: 17px;
+color: #65b732;
+border-radius: 15px;
+position: relative;
+display: inline-block;
+transition: background-color .2s, box-shadow .2s; /* 将阴影和背景颜色的过渡时间设置为相同的值 */
+cursor: pointer;
+text-transform: uppercase;
+background-color: inherit;
+}
+#lishi-icon:hover {
+background: #65b732;
+color: rgb(238, 238, 238);
+cursor: pointer;
+background-size: 400%;    
+box-shadow: 0 0 11.5px #65b732;
+z-index: 1;
+}
+#lishi-icon::before {
+content: '';
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: inherit;
+  filter: blur(0px);
+  z-index: -1;
+  opacity: 1;
+  border-radius: 15px;
+  transition: .05s; /* 将阴影的过渡时间设置为相同的值 */
 }
